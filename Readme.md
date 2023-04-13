@@ -3,6 +3,9 @@
 ```
 pip install requests
 pip install websockets==6.0
+pip install prettytable
+pip install pandas
+pip install openpyxl
 ```
 
 配置个人信息

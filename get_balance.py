@@ -467,8 +467,8 @@ def check_one_coin():
 #balChg 账户层面的余额变动数量  billId 账单ID ts 账单创建时间t
 if __name__ == '__main__':
     # init_basics()
-    # init_account_order()
-    update()
+    init_account_order()
+    # update()
     # check_down()
     # check_up()
     # check_one_coin()
