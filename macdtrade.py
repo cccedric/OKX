@@ -23,10 +23,8 @@ def macdtrade(close, fastp=12, slowp=26, signalp=11):
 
     # 计算择时信号
     if data['MACD'][datalen-1] > data['Signal'][datalen-1] and data['MACD'][datalen-2] < data['Signal'][datalen-2]:
-        data['Signal_Cross'][datalen] = 1
         return 0
     elif data['MACD'][datalen-1] < data['Signal'][datalen-1] and data['MACD'][datalen-2] > data['Signal'][datalen-2]:
-        data['Signal_Cross'][datalen] = -1
         return 1
     else:
         return 2
